@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethersoft - Desarrollo de Apps para Android</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .services, .portfolio {
+            display: flex;
+            justify-content: space-around;
+        }
+        .service, .portfolio-item {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenidos a Ethersoft</h1>
+        <p>Desarrollamos aplicaciones Android innovadoras y eficientes</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Desarrollo de Apps Android</h3>
+                    <p>Creación de aplicaciones personalizadas para Android, adaptadas a tus necesidades.</p>
+                </div>
+                <div class="service">
+                    <h3>Consultoría Técnica</h3>
+                    <p>Asesoramiento experto en desarrollo móvil y optimización de aplicaciones.</p>
+                </div>
+                <div class="service">
+                    <h3>Mantenimiento y Soporte</h3>
+                    <p>Soporte continuo y actualizaciones para asegurar el rendimiento óptimo de tus apps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portafolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <h3>App de Gestión</h3>
+                    <p>Aplicación de gestión empresarial con integración en la nube.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>App de E-commerce</h3>
+                    <p>Plataforma de comercio electrónico con pasarela de pagos segura.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>App de Educación</h3>
+                    <p>Soluciones de aprendizaje móvil para educación interactiva.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ethersoft - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
